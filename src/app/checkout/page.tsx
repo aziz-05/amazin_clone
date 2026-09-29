@@ -271,7 +271,6 @@ export default function CheckoutPage() {
                   inputMode='numeric'
                   autoComplete='cc-exp'
                   error={errors.expiry}
-                  className='font-mono'
                 />
                 <Field
                   label='CVC'
