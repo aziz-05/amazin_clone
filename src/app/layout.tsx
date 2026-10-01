@@ -18,8 +18,8 @@ export const viewport: Viewport = { themeColor: '#0b1220' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={`${inter.variable} ${jakarta.variable}`}>
-      <body id='top'>
+    <html lang='en' className={`${inter.variable} ${jakarta.variable}`} suppressHydrationWarning>
+      <body id='top' suppressHydrationWarning>
         <Header />
         <main className='min-h-[60vh]'>{children}</main>
         <Footer />
